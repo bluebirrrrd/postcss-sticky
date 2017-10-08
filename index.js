@@ -1,5 +1,5 @@
 "use strict"
-const postcss = require("postcss")
+const {plugin} = require("postcss")
 const {name} = require("./package")
 
 const offsets = [
@@ -13,7 +13,7 @@ const isOffset = node => {
   return node.type == "decl" && offsets.includes(node.prop)
 }
 
-const plugin = root => root.walkDecls(decl => {
+const sticky = root => root.walkDecls(decl => {
   if (decl != "position: sticky") return
 
   decl.cloneBefore({
@@ -33,4 +33,4 @@ const plugin = root => root.walkDecls(decl => {
   })
 })
 
-module.exports = postcss.plugin(name, () => plugin)
+module.exports = plugin(name, () => sticky)
