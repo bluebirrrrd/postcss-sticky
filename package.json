@@ -13,6 +13,7 @@
   "bugs": "https://github.com/shvaikalesh/postcss-sticky/issues",
   "license": "MIT",
   "author": "Aleksey Shvayka <shvaikalesh@gmail.com>",
+  "main": "lib",
   "repository": "shvaikalesh/postcss-sticky",
   "peerDependencies": {
     "postcss": "^6"
