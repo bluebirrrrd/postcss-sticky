@@ -29,6 +29,7 @@ const plugin = root => root.walkDecls(decl => {
       selector: rule.selector,
       nodes: rule.nodes.filter(isOffset),
     },
+    source: decl.source,
   })
 })
 
