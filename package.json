@@ -1,0 +1,20 @@
+{
+  "name": "postcss-sticky",
+  "version": "1.0.0",
+  "description": "PostCSS plugin for adding `position: sticky` fallbacks",
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-plugin",
+    "position",
+    "sticky",
+    "fallback"
+  ],
+  "bugs": "https://github.com/shvaikalesh/postcss-sticky/issues",
+  "license": "MIT",
+  "author": "Aleksey Shvayka <shvaikalesh@gmail.com>",
+  "repository": "shvaikalesh/postcss-sticky",
+  "peerDependencies": {
+    "postcss": "^6"
+  }
+}
